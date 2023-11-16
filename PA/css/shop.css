@@ -1,0 +1,687 @@
+*, html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "monospace", sans-serif;
+}
+
+body {
+width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.close-button {
+width: 20px;
+height: 20px;
+background: #f1c40f;
+border-radius: 50%;
+border: 3px solid #fff;
+display: block;
+text-align: center;
+color: #fff;
+text-decoration: none;
+position: absolute;
+top: -10px;
+right: -10px;
+}
+ 
+
+
+.text-wrap {
+color: #FFFFFF;
+font-weight: 400;
+margin-left: 20px;
+}
+
+.fContainer {
+  top: 0;
+  display: flex;
+  width: 100%;
+  /* height: 350px; */
+  background-color:white;
+}
+
+.wrapper{
+  display: flex;
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png');
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  font-size: 0;
+  padding: -20px;
+}
+
+.logo > li> img:hover{
+  width: 40x;
+  height: 40px;
+  transition: all .6s ease-in-out;
+
+}
+
+
+.navigation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation > li > img{
+  width: 50px;
+  height: 50px;
+  border-radius:50px;
+}
+
+.navigation > li > img:hover{
+  width: 65px;
+  height: 65px;
+  border-radius: 65px;
+  transition: all .3s ease-in-out;
+}
+
+.navigation > li{
+  list-style-type: none;
+  padding: 15px;
+  width: 100%;
+}
+
+.navigation > li > a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+.home{
+  color: white;
+  font-weight: 700;
+  padding: 15px;
+}
+
+.navigation > li > .home:hover{
+  width: 70px;
+  height: 70px;
+  border-radius:70px;
+  transition: all .6s ease-in-out;
+}
+
+.akun{
+  color: white;
+  font-weight: 700;
+  background-color:  rgb(49, 57, 81);
+  padding: 15px;
+  
+}
+
+.navigation > li > .akun:hover{
+  width: 70px;
+  height: 70px;
+  border-radius:70px;
+  transition: all .6s ease-in-out;
+}
+
+* {
+  box-sizing: flex;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+.navigation .icon-cart {
+position: relative;
+right: 12px;
+width: 32px;
+height: 32px;
+}
+
+.navigation .icon-cart span {
+display: flex;
+width: 20px;
+height: 20px;
+background-color: red;
+justify-content: center;
+align-items: center;
+color: #FFFFFF;
+border-radius: 50%;
+position: absolute;
+top: 50%;
+right: -20px;
+}
+
+.cartTab {
+width: 400px;
+background-color: #353432;
+color: #eee;
+position: fixed;
+inset: 70px -400px 0 auto;
+display: grid;
+grid-template-rows: 70px 1fr 70px;
+
+}
+
+body.showcart .cartTab {
+inset: 70px 0 0 auto;
+}
+
+
+
+.cartTab h1 {
+padding: 20px;
+margin: 0;
+font-weight: 300;
+}
+
+.cartTab .btn {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .btn button {
+background-color: #e8bc0e;
+border: none;
+font-weight: 500;
+cursor: pointer;
+}
+
+.cartTab .btn .closebtn {
+background-color: #eee;
+}
+
+.cartTab .listCart .item img {
+width: 100%;
+}
+
+.cartTab .listCart .item {
+display: grid;
+grid-template-columns: 70px 150px 50px 1fr;
+gap: 10px;
+text-align: center;
+align-items: center;
+}
+
+.listCart .quantity span {
+display: inline-block;
+width: 25px;
+height: 25px;
+background-color: #eee;
+color: #555;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2) {
+background-color: transparent;
+color: #eee;
+}
+
+.listCart .item:nth-child(even) {
+background-color: #eee1;
+}
+
+.listCart {
+overflow: auto;
+}
+
+.listCart::-webkit-scrollbar {
+width: 0;
+}
+
+.container {
+z-index: -9999;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+max-width: 2000px;
+margin-block: 32px;
+gap: 32px;
+align-items: flex-start;
+}
+
+img {
+max-width: 100%;
+display: block;
+object-fit: cover;
+}
+
+
+
+/* FOOTER */
+footer {
+
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.copyright {
+color: #FFFFFF;
+}
+
+.social a {
+font-size: 30px;
+}
+
+.introduction-section img{
+display: flex;
+content: 10%;
+justify-content: center;
+padding: 15px;
+margin: 50px 0px 0px 120px;
+height: 600px;
+}
+
+:root {
+  --primary: #18253c;
+  /* --primary: #fff; */
+  --secondary: #ffffff;
+  --bg: #0e1523;
+  /* --bg: #f5f5f5; */
+}
+
+.slider {
+  background-color: var(--bg);
+  padding: 0rem;
+
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); 
+  place-items: center;
+
+
+  font: normal 1rem sans-serif;
+}
+
+.card {
+  margin: 1rem;
+  position: relative;
+  left:0;
+
+  min-width: 17rem;
+  height: 23rem;
+  background-color:#18253c;
+  color: #fff;
+  border-radius: 1rem;
+  border: .1rem solid transparent;
+
+  box-shadow: 0 .2rem .6rem #0003;
+  transition: .5s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+      min-width: 21rem;
+  }
+}
+
+
+.card:hover {
+  border: .1rem solid var(--secondary);
+  transform: scale(1.05);
+}
+
+
+.card-content {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  
+  overflow: hidden;
+  border-radius: inherit;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-content::before, .card-content::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  transition: .5s ease-in-out;
+}
+
+.card-content::before {
+  top: -6%;
+  right: -6%;
+  width: 9rem;
+  height: 9rem;
+}
+
+.card-content::after {
+  bottom: -6%;
+  left: -6%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.card-content:hover::before {
+  transform: scale(1.8);
+}
+
+.card-content:hover::after {
+  transform: scale(0);
+}
+
+.card-img, 
+.card-title {
+  transform: translateY(4rem);
+  transition: .5s ease-in-out;
+}
+
+.card-img {
+  width: auto;
+  height: 20.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition-delay: .1s;
+}
+
+.card-body, 
+.card-footer {
+  transform: translateY(8rem);
+  transition: .5s ease-in-out;
+}
+
+.card-body {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  transition-delay: .2s;
+}
+
+.card:hover .card-img,
+.card:hover .card-title,
+.card:hover .card-body,
+.card:hover .card-footer {
+  transform: translateY(0);
+}
+
+.card-footer {
+  transition-delay: .3s;
+}
+
+
+
+.price {
+  font: bolder 1.5rem sans-serif;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: unset;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: var(--secondary);
+}
+
+.beli {
+  border: .1rem solid var(--secondary);
+}
+
+.checkbtn{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.beli:active {
+  transform: scale(0.95);
+  }
+
+  @media screen and (max-width: 575.98px) { 
+    .slider{
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); 
+    }
+
+    .card{
+      height: 20rem;
+      min-width: 13rem;
+    }
+
+    .card-img {
+      width: auto;
+      height: 9rem;
+    }
+
+    .slider .buttons {
+      top: 40%; /* Adjust the top position of the buttons */
+      width: 60%;
+    }
+  
+    .slider .buttons button{
+      width: 30px;
+      height: 30px;
+    }
+
+    #popup {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: rgba(0,0,0,.7);
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      visibility: hidden;
+      }
+       
+      .window {
+      width: 300px;
+      height: 200px;
+      background: #fff;
+      border-radius: 20px;
+      position: relative;
+      padding: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,.4);
+      text-align: center;
+      margin: 150px auto;
+      }
+    
+      .window h1{
+          color: #000000;
+          padding-top: 3%;
+      }
+    
+      .window p{
+          color: black;
+          padding-top: 1%;
+      }
+       
+      .close-button {
+      width: 20px;
+      height: 20px;
+      background: #f1c40f;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      display: block;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      }
+       
+      #popup:target {
+      visibility: visible;
+      }
+    
+    .text-wrap {
+      color: #FFFFFF;
+      font-weight: 400;
+      margin-left: 20px;
+    }
+  }
+
+
+  @media screen and (min-width: 576px) and (max-width: 767.98px) { 
+
+
+    
+    .slider{
+      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+    }
+
+    .card{
+      height: 20rem;
+      min-width: 15rem;
+    }
+
+    .card-img {
+      width: auto;
+      height: 10.5rem;
+    }
+
+    .checkbtn{
+      position: absolute;
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 60px;
+      margin-left: 85%;
+      cursor: pointer;
+      display: block;
+    }
+    #check{
+    }
+
+    .navigation{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .navigation > li > img{
+      width: 50px;
+      height: 50px;
+      border-radius:50px;
+    }
+    
+    .navigation > li > img:hover{
+      width: 65px;
+      height: 65px;
+      border-radius: 65px;
+      transition: all .3s ease-in-out;
+    }
+    
+    .navigation > li{
+      list-style-type: none;
+      padding: 15px;
+      width: 100%;
+    }
+    
+    .navigation > li > a{
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+    
+    .home{
+      color: white;
+      font-weight: 700;
+      padding: 15px;
+  
+    }
+    
+    .navigation > li > .home:hover{
+      width: 70px;
+      height: 70px;
+      border-radius:70px;
+      transition: all .6s ease-in-out;
+    }
+    
+    .akun{
+      color: white;
+      font-weight: 700;
+      background-color:  rgb(49, 57, 81);
+      padding: 15px;
+      
+    }
+    
+    .navigation > li > .akun:hover{
+      width: 70px;
+      height: 70px;
+      border-radius:70px;
+      transition: all .6s ease-in-out;
+    }
+    
+    * {
+      box-sizing: flex;
+    }
+    
+    *,
+    *::before,
+    *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+
+  }
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+
+  .slider{
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+  }
+
+  .card{
+  
+  }
+
+}
+
+@media screen and (min-width: 1200px) { 
+  .slider{
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); 
+  }
+}
